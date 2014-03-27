@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="reset.css"></link>
+    <link rel="stylesheet" href="style.css"></link>
+  </head>
+	<body>
+
+    <div class="timeline" style="position:fixed; top: 50px; left: 50px">
+      <div class="year" data-start="font-size: 10rem; color: rgb(255, 0, 0)"
+        data-300="font-size: 1rem; color: rgb(0, 0, 0)"
+      >2001</div>
+
+      <div class="year" 
+        data-top="font-size: 1rem; color: rgb(0, 0, 0)"
+        data-300="font-size: 10rem; color: rgb(255, 0, 0)"
+        data-600="font-size: 1rem; color: rgb(0, 0, 0)"
+      >2002</div>
+    </div>
+
+    <div class="stuff" style="width: 75%; position: fixed; left: 25%">
+      <div class="tweet-example" 
+        data-start="opacity: 0"
+        data-200="opacity: 0; -webkit-transform: scale(0)"
+        data-400="opacity: 1; -webkit-transform: scale(1)"
+      >
+        <blockquote class="twitter-tweet" lang="en"><p>Be diligent to know the state of your flocks, And attend to your herds. Proverbs 27:23</p>&mdash; Dave Ramsey (@DaveRamsey) <a href="https://twitter.com/DaveRamsey/statuses/449146897073467392">March 27, 2014</a></blockquote>
+    
+      </div>
+
+      <div class="youtube-example" style="position: absolute"
+        data-start="top: -500px"
+        data-100="top: 100px; left: 50px;"
+        data-200="top: 100px; left: 50px;"
+        data-500="top: 0px; left: 2000px;"
+      >
+        <iframe width="250" height="141" src="//www.youtube.com/embed/IsVqOe07cdY?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+   
+		<script type="text/javascript" src="skrollr.js"></script>
+	  <script type="text/javascript">
+      var s = skrollr.init();
+    </script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</body>
+</html>
